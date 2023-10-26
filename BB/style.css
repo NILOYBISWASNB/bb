@@ -1,0 +1,284 @@
+*{
+    padding: 0px;
+    margin: 2px;
+    outline: 0px;
+}
+.text{
+    color: blue;
+}
+.text:hover{
+    background-color: darkred;
+    color: darkgreen;
+}
+.menu{
+    background-color: green;
+    height: 45px;
+    box-sizing: border-box;
+}
+.menu ul{
+    list-style: none;
+    text-align: center;
+}
+.menu ul li{
+    float: left;
+    margin: 10px 45px;
+}
+.menu ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: 15px;
+    padding: 15px;
+}
+.menu ul li a:hover{
+    color: black;
+}
+.table, tr, th, td{
+    width: 300px;
+    height: 50px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.th, td{
+    text-align: center;
+}
+.pic{
+    width: 400px;
+    height: 300px;
+    background-color: darkred;
+    border:5px solid black;
+    float: left;
+}
+.picc{
+    width: 400px;
+    height: 300px;
+    background-color: blue;
+    border: 5px solid black;
+    float: right;
+}
+.position{
+    height: 70px;
+    width: 350px;
+    border: 3px solid blue;
+}
+.posi{
+    height: 30px;
+    width: 100px;
+    border: 3px solid red;
+    margin-left: 200px;
+}
+.overflow{
+    width: 300px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid red;
+    overflow: auto;
+}
+.tool{
+    position: relative;
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+}
+.toolber{
+    visibility: hidden;
+    background-color: blue;
+    color: yellow;
+    border-radius: 10%;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+.tool:hover .toolber{
+    visibility: visible;
+}
+.cal-head{
+    text-align: center;
+}
+.card{
+    margin: 0 auto;
+    max-width: 350px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 5px 5px 0px red;
+    transition: 0.4s;
+    font-size: 0;
+}
+.calc-heading #result{
+    width: 335px;
+    height: 100px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.calc-body .btn{
+    width: 80px;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+.btn-style{
+    background-color: pink;
+}
+.calc-body .btn:hover{
+    background-color: green;
+}
+.shado{
+    text-shadow: 5px 5px 3px red;
+    font-size: 50px;
+    background-color: blueviolet;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.logo{
+    text-align: center;
+}
+.menu-ber{
+    background-color: #0393fa;
+    padding: 10px 50px;
+    margin: 5px 100px;
+    text-align: center;
+}
+.menu-ber a{
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+}
+.menu-ber a:hover{
+    background-color: red;
+    padding: 10px 50px;
+}
+.drop-menu{
+    display: inline;
+    position: relative;
+}
+.drop-content{
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    text-align: left;
+    background-color: #0393fa;
+    display: none;
+}
+.drop-menu:hover .drop-content{
+    display: block;
+}
+.drop-content a{
+    display: block;
+}
+.progressber{
+    background-color: blue;
+    margin: 15px 15px;
+    height: 650px;
+}
+.progress li{
+    list-style: none;
+    margin: 30px 30px;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+}
+.progress li::before{
+    position: absolute;
+    content: '';
+    display: table;
+    clear: both;
+    width: 100%;
+    height: 20px;
+    background-color: darkred;
+    border-radius: 10px;
+    top: calc(100% + 10px);
+}
+.progress li::after{
+    position: absolute;
+    content: '';
+    display: table;
+    clear: both;
+    width: 0;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 10px;
+    top: calc(100% + 10px);
+
+    animation-duration: 2s;
+    animation-delay: 1.2s;
+    animation-iteration-count: 2;
+    animation-timing-function: linner;
+    animation-fill-mode: forwards;
+}
+
+.progress li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%
+    }
+}
+.progress li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 70%
+    }
+}
+.progress li.js::after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 40%
+    }
+}
+.progress li.bs::after{
+    animation-name: bs;
+}
+@keyframes bs{
+    to{
+        width: 50%
+    }
+}
+.progress li.github::after{
+    animation-name: github;
+}
+@keyframes github{
+    to{
+        width: 80%
+    }
+}
+.progress li.gitlab::after{
+    animation-name: gitlab;
+}
+@keyframes gitlab{
+    to{
+        width: 60%
+    }
+}
+.progress li.jq::after{
+    animation-name: jq;
+}
+@keyframes jq{
+    to{
+        width: 100%
+    }
+}
+.progress li.phyton::after{
+    animation-name: phyton;
+}
+@keyframes phyton{
+    to{
+        width: 70%
+    }
+}
+.copy{
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-align: right;
+}
